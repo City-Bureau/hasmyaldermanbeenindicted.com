@@ -56,7 +56,7 @@
     "natives": "1.1.3"
   },
   "dependencies": {
-    "autocompleter": "^4.0.2",
+    "autocompleter": "^5.0.1",
     "whatwg-fetch": "^3.0.0"
   }
 }

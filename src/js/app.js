@@ -7,27 +7,48 @@ function updateWard(ward) {
 
 document.addEventListener("DOMContentLoaded", () => {
   const address = document.getElementById("address");
+  const addrCtrl = document.querySelector(".control.address");
   const select = document.getElementById("ward");
 
   if (!address) return;
+
+  let addrNum = "";
+  let addresses = [];
 
   autocomplete({
     input: address,
     emptyMsg: "No addresses found",
     minLength: 2,
     debounceWaitMs: 150,
-    fetch: (input, update) => fetch(`http://hasmyaldermanbeenindicted.com.s3-website-us-east-1.amazonaws.com/addresses/${input.split(" ")[0]}.json`)
-      .then((res) => res.json())
-      .then((res) => Object.keys(res)
-        .map((addr) => ({value: res[addr].ward, label: addr}))
-        .filter((addr) => addr.label.toLowerCase().startsWith(input.toLowerCase()))
-        .slice(0, 10))
-      .then(update)
-      .catch((res) => console.error(res)),
+    fetch: (input, update) => {
+      const inputAddr = input.split(" ")[0].replace(/[^0-9]/g, "");
+      const matchAddr = input.replace(/[^a-z0-9 ]/gmi, "").toUpperCase();
+      if (addrNum === inputAddr) {
+        update(addresses.filter((addr) => addr.label.startsWith(matchAddr)).slice(0, 5));
+      } else {
+        addrNum = inputAddr;
+        return fetch(`https://s3.amazonaws.com/hasmyaldermanbeenindicted.com/addresses/${addrNum}.json`)
+          .then((res) => res.json())
+          .then((res) => {
+            addresses = Object.keys(res).map((addr) => ({value: res[addr].ward, label: addr}));
+            return addresses.filter((addr) => addr.label.startsWith(matchAddr))
+              .slice(0, 5);
+          }).then(update)
+          .catch((res) => console.error(res));
+      }
+    },
     onSelect: (result) => {
       address.value = result.label;
       select.value = result.value;
       updateWard(result.value);
+    },
+    customize: function(input, inputRect, container, maxHeight) {
+      container.style.position = "absolute";
+      container.style.width = "100%";
+      container.style.left = "0";
+      container.style.right = "0";
+      container.style.top = "auto";
+      addrCtrl.appendChild(container);
     },
   });
 
