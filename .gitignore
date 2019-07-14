@@ -1,0 +1,8 @@
+.DS_Store
+node_modules/
+dist/
+.env
+.vscode
+site/data/manifest.json
+data/*
+!data/.keep

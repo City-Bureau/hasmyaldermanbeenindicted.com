@@ -1,0 +1,44 @@
+{{ define "content" -}}
+<section class="section hero is-fullheight has-text-centered">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title is-4 has-text-weight-normal">
+        {{ humanize .Params.ward }} ward: {{ .Params.name }}
+      </h1>
+      <h2 class="title is-1">
+        {{ if (eq .Params.status "nobut") }}
+          NO, but...
+        {{ else }}
+          {{ upper .Params.status }}
+        {{ end }}
+      </h2>
+      <h3 class="title is-2">
+        {{ .Scratch.Get "statusDesc" }}
+      </h3>
+      <hr>
+      <div class="columns has-text-left">
+        <div class="column content is-offset-3 is-6">
+          {{ if (eq .Params.status "no") }}
+            <p>
+              Looks like you're one of the lucky ones!
+            </p>
+          {{ else }}
+            {{ .Content }}
+          {{ end }}
+        </div>
+      </div>
+      <br>
+      <div class="columns has-text-left">
+        <div class="column content is-offset-3 is-6">
+          <h3 class="subtitle is-4">
+            Frustrated that you even have to ask?
+          </h3>
+          <p>
+            Us too. That's why we're holding a series of events on how you can hold your alderman accountable, whether it's an election year or not.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{- end }}

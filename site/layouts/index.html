@@ -1,0 +1,43 @@
+{{ define "content" -}}
+<section class="section hero is-fullheight has-text-centered">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title is-1">
+        Has your alderman been indicted?
+      </h1>
+      <h2 class="subtitle is-4">
+        Maybe. It's Chicago.
+      </h2>
+      <div class="field">
+        <label class="label is-size-5" for="address">
+          What's your address?
+        </label>
+        <div class="control has-text-centered">
+          <input class="input is-size-5" type="text" id="address" placeholder="Address (starting with number)" />
+        </div>
+      </div>
+      <div class="field is-horizontal">
+        <div class="field-label is-normal">
+          <label class="label  is-size-5" for="ward">
+            Or your ward (if you know it already):
+          </label>
+        </div>
+        <div class="field-body">
+          <div class="field is-narrow">
+            <div class="control has-text-centered">
+              <div class="select is-size-5">
+                <select id="ward" placeholder="Ward">
+                  <option value="">Ward</option>
+                  {{ range sort .Pages ".Params.ward" "asc" }}
+                    <option>{{ .Params.ward }}</option>
+                  {{ end }}
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{- end }}

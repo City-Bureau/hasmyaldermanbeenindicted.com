@@ -1,0 +1,25 @@
+baseURL = "/"
+languageCode = "en-us"
+languageLang = "en"
+title = "Has my alderman been indicted?"
+enableRobotsTXT = true
+
+[params]
+  subtitle = "Maybe. It's Chicago."
+  description = "Find out if your Chicago alderman has been indicted"
+  author = "City Bureau"
+  domain = "hasmyaldermanbeenindicted.com"
+  twitter = "city_bureau"
+  googleAnalytics = "UA-68381272-4"
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+
+disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
+
+[blackFriday]
+  hrefTargetBlank = true
