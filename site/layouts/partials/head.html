@@ -20,7 +20,7 @@
   <meta property="og:type" content="website">
   <meta property="og:description" content="{{ .Site.Params.description }}">
   <meta property="og:url" content="https://{{ .Site.Params.domain }}/">
-  <meta property="og:image" content="https://{{ .Site.Params.domain }}/icons/documenters-fb.jpg">
+  <meta property="og:image" content="https://{{ .Site.Params.domain }}/icons/teaser-fb.jpg">
   <meta property="og:image:width" content="2400" />
   <meta property="og:image:height" content="1260" />
 
@@ -39,7 +39,6 @@
     {{ .Scratch.Set "aldStatus" "Yes" }}
     {{ .Scratch.Set "statusDesc" "has been indicted" }}
   {{ else if (eq .Params.status "nobut") }}
-    {{ .Scratch.Set "aldStatus" "No, but..." }}
     {{ .Scratch.Set "statusDesc" "has not been indicted, but..." }}
   {{ end }}
   <title>The {{ humanize .Params.ward }} ward alderman {{ .Scratch.Get "statusDesc" }}</title>
@@ -53,8 +52,8 @@
   <meta property="og:description" content="{{ .Site.Params.description }}">
   <meta property="og:url" content="https://{{ .Site.Params.domain }}/{{ .Permalink }}">
   <meta property="og:image" content="https://{{ .Site.Params.domain }}/icons/documenters-fb.jpg">
-  <meta property="og:image:width" content="2400" />
-  <meta property="og:image:height" content="1260" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
   
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
@@ -63,7 +62,7 @@
   <meta name="twitter:description" content="{{ .Site.Params.description }}">
   <meta name="twitter:title" content='The {{ humanize .Params.ward }} ward alderman {{ .Scratch.Get "statusDesc" }}'>
   <meta name="twitter:url" content="https://{{ .Site.Params.domain }}/{{ .Permalink }}">
-  <meta name="twitter:image:src" content="https://{{ .Site.Params.domain }}/icons/documenters-tw.jpg">
+  <meta name="twitter:image:src" content="https://{{ .Site.Params.domain }}/icons/teaser-tw.jpg">
   {{- end }}
 
   <!-- CSS -->
@@ -73,14 +72,8 @@
   <!-- Icons -->
   <link rel="shortcut icon" href="/icons/favicon.ico" />
   <link rel="icon" type="image/png" href="/icons/icon-192x192.png" sizes="192x192" />
-  <link rel="icon" type="image/png" href="/icons/icon-128x128.png" sizes="128x128" />
-  <link rel="icon" type="image/png" href="/icons/icon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/png" href="/icons/icon-32x32.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="/icons/icon-16x16.png" sizes="16x16" />
-
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <link rel="apple-touch-icon" sizes="152x152" href="/icons/icon-152x152.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
 
   <link rel="stylesheet" href="https://use.typekit.net/zck0ikq.css">
