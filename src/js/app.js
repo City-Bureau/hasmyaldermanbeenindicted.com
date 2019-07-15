@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
         update(addresses.filter((addr) => addr.label.startsWith(matchAddr)).slice(0, 5));
       } else {
         addrNum = inputAddr;
-        return fetch(`https://s3.amazonaws.com/hasmyaldermanbeenindicted.com/addresses/${addrNum}.json`)
+        return fetch(`https://hasmyaldermanbeenindicted.com/addresses/${addrNum}.json`)
           .then((res) => res.json())
           .then((res) => {
             addresses = Object.keys(res).map((addr) => ({value: res[addr].ward, label: addr}));
