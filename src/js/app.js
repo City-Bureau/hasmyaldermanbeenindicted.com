@@ -22,8 +22,11 @@ document.addEventListener("DOMContentLoaded", () => {
     debounceWaitMs: 150,
     fetch: (input, update) => {
       const inputAddr = input.split(" ")[0].replace(/[^0-9]/g, "");
-      const matchAddr = input.replace(/[^a-z0-9 ]/gmi, "").toUpperCase();
-      if (addrNum === inputAddr) {
+      // Replace non alpha as well as trailing directionals (i.e. SOUTH becomes S)
+      const matchAddr = input.replace(/[^a-z0-9 ]/gmi, "")
+        .toUpperCase()
+        .replace(/(\d+ [nsew])([a-z]+)(.*)/gi, "$1$3");
+      if (addrNum === inputAddr && addresses.length > 0) {
         update(addresses.filter((addr) => addr.label.startsWith(matchAddr)).slice(0, 5));
       } else {
         addrNum = inputAddr;
