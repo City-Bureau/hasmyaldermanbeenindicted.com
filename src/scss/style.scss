@@ -51,6 +51,11 @@ section.hero.is-fullheight {
 
 .footer {
   padding: 1.5rem;
+  background-color: $lightBlue;
+
+  img {
+    height: 75px;
+  }
 }
 
 img {

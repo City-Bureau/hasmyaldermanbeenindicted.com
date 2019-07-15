@@ -13,7 +13,7 @@
         {{ end }}
       </h2>
       <h3 class="title is-2">
-        {{ .Scratch.Get "statusDesc" }}
+        Your alderman {{ .Scratch.Get "statusDesc" }}
       </h3>
       <hr>
       <div class="columns has-text-left">
@@ -25,6 +25,11 @@
           {{ else }}
             {{ .Content }}
           {{ end }}
+          <p>
+            <a href="/">
+              Check other wards
+            </a>
+          </p>
         </div>
       </div>
       <br>

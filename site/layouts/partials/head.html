@@ -34,23 +34,23 @@
   <meta name="twitter:image:src" content="https://{{ .Site.Params.domain }}/icons/documenters-tw.jpg">
   {{- else -}}
   {{ .Scratch.Set "aldStatus" "No" }}
-  {{ .Scratch.Set "statusDesc" "Your alderman has not been indicted" }}
+  {{ .Scratch.Set "statusDesc" "has not been indicted" }}
   {{ if (eq .Params.status "yes") }}
     {{ .Scratch.Set "aldStatus" "Yes" }}
-    {{ .Scratch.Set "statusDesc" "Your alderman has been indicted" }}
+    {{ .Scratch.Set "statusDesc" "has been indicted" }}
   {{ else if (eq .Params.status "nobut") }}
     {{ .Scratch.Set "aldStatus" "No, but..." }}
-    {{ .Scratch.Set "statusDesc" "Your alderman has not been indicted, but..." }}
+    {{ .Scratch.Set "statusDesc" "has not been indicted, but..." }}
   {{ end }}
-  <title>{{ humanize .Params.ward }} ward: {{ .Scratch.Get "aldStatus" }} | {{ .Site.Title }}</title>
-  <meta name="description" content='{{ .Scratch.Get "statusDesc" }}'>
+  <title>The {{ humanize .Params.ward }} ward alderman {{ .Scratch.Get "statusDesc" }}</title>
+  <meta name="description" content="{{ .Site.Params.description }}">
   <meta name="author" content="{{ .Site.Params.author }}">
   
   <!-- Facebook -->
   <meta property="og:site_name" content="{{ .Site.Title }}">
-  <meta property="og:title" content='{{ humanize .Params.ward }} ward: {{ .Scratch.Get "aldStatus" }} | {{ .Site.Title }}'>
+  <meta property="og:title" content='The {{ humanize .Params.ward }} ward alderman {{ .Scratch.Get "statusDesc" }}'>
   <meta property="og:type" content="website">
-  <meta property="og:description" content='{{ .Scratch.Get "statusDesc" }}'>
+  <meta property="og:description" content="{{ .Site.Params.description }}">
   <meta property="og:url" content="https://{{ .Site.Params.domain }}/{{ .Permalink }}">
   <meta property="og:image" content="https://{{ .Site.Params.domain }}/icons/documenters-fb.jpg">
   <meta property="og:image:width" content="2400" />
@@ -60,8 +60,8 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="{{ .Site.Params.twitter }}">
   <meta name="twitter:creator" content="{{ .Site.Params.twitter }}">
-  <meta name="twitter:description" content='{{ .Scratch.Get "statusDesc" }}'>
-  <meta name="twitter:title" content='{{ humanize .Params.ward }}: {{ .Scratch.Get "aldStatus" }}'>
+  <meta name="twitter:description" content="{{ .Site.Params.description }}">
+  <meta name="twitter:title" content='The {{ humanize .Params.ward }} ward alderman {{ .Scratch.Get "statusDesc" }}'>
   <meta name="twitter:url" content="https://{{ .Site.Params.domain }}/{{ .Permalink }}">
   <meta name="twitter:image:src" content="https://{{ .Site.Params.domain }}/icons/documenters-tw.jpg">
   {{- end }}
