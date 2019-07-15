@@ -50,7 +50,7 @@
   <meta property="og:title" content='{{ .Scratch.Get "aldStatus" }}, the {{ humanize .Params.ward }} ward alderman {{ .Scratch.Get "statusDesc" }}'>
   <meta property="og:type" content="website">
   <meta property="og:description" content="{{ .Site.Params.description }}">
-  <meta property="og:url" content="https://{{ .Site.Params.domain }}/{{ .Permalink }}">
+  <meta property="og:url" content="https://{{ .Site.Params.domain }}{{ .Permalink }}">
   <meta property="og:image" content="https://{{ .Site.Params.domain }}/icons/teaser-social.png">
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
@@ -61,7 +61,7 @@
   <meta name="twitter:creator" content="{{ .Site.Params.twitter }}">
   <meta name="twitter:description" content="{{ .Site.Params.description }}">
   <meta name="twitter:title" content='{{ .Scratch.Get "aldStatus" }}, the {{ humanize .Params.ward }} ward alderman {{ .Scratch.Get "statusDesc" }}'>
-  <meta name="twitter:url" content="https://{{ .Site.Params.domain }}/{{ .Permalink }}">
+  <meta name="twitter:url" content="https://{{ .Site.Params.domain }}{{ .Permalink }}">
   <meta name="twitter:image:src" content="https://{{ .Site.Params.domain }}/icons/teaser-tw.png">
   {{- end }}
 
