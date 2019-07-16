@@ -1,0 +1,45 @@
+{{ define "content" -}}
+<section class="section hero is-fullheight has-text-centered">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title is-1">
+        Scoreboard
+      </h1>
+      <div class="columns is-multiline has-text-left">
+          <div class="column is-2 header"></div>
+          <div class="column is-2 header">
+              Ward
+          </div>
+          <div class="column is-4 header">
+              Alderman
+          </div>
+          <div class="column is-2 header">
+              Indicted?
+          </div>
+          <div class="column is-2 header"></div>
+          {{ range sort (where .Site.Pages "Params.ward" ">" 0) ".Params.ward" "asc" }}
+          <div class="column is-2"></div>
+          <div class="column is-2 ward-row {{ .Params.status }}">
+              <a href="{{ .Permalink }}">
+                {{ humanize .Params.ward }}
+              </a>
+          </div>
+          <div class="column is-4 ward-row {{ .Params.status }}">
+              {{ .Params.name }}
+          </div>
+          <div class="column is-2 ward-row {{ .Params.status }}">
+            {{ if (eq .Params.status "yes") }}
+                Yes
+            {{ else if (eq .Params.status "nobut") }}
+                No, but...
+            {{ else }}
+                No
+            {{ end }}
+          </div>
+          <div class="column is-2"></div>
+          {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+{{- end }}
