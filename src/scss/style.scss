@@ -162,6 +162,10 @@ html {
   }
 }
 
+.hero.is-fullheight.about .hero-body {
+  align-items: flex-start;
+}
+
 @media print {
   html {
     overflow-y: visible;
