@@ -9,7 +9,7 @@ enableRobotsTXT = true
   description = "Find out if your Chicago alderman has been indicted because at this point you've gotta ask."
   author = "City Bureau"
   domain = "hasmyaldermanbeenindicted.com"
-  twitter = "city_bureau"
+  twitter = "@city_bureau"
   googleAnalytics = "UA-68381272-5"
 
 [menu]

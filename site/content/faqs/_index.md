@@ -2,6 +2,10 @@
 title: FAQs | Has my alderman been indicted?
 ---
 
+### Who made this?
+
+<a href="https://citybureau.org/">City Bureau</a>...
+
 ### What does an alderman even do?
 
 Well, the term “alderman” comes from the Old English title of ealdorman, which means "elder man" or "older man"—so it’s a title in need of an update! Thirty percent of alderpeople in Chicago are women. In Chicago, an alderperson is one 50 elected officials who represent a district that contains 2 percent of the city’s residents—in Chicago we call these districts wards. The council is a legislative body, but alderfolks do more than vote on legislation. When something goes wrong on your block, like a pothole needs fixing, or when someone wants to get something done that requires city approval, like a new street sign or sidewalk cafe permit; the first step is often a call to the alder’s office.
@@ -26,7 +30,7 @@ A [criminal charge](https://en.wikipedia.org/wiki/Criminal_charge) is a formal a
 
 ### What can I do next?
 
-We're holding a series of Public Newsroom events across the city throughout August on how you can hold your alderman accountable, whether it's an election year or not. [See the full schedule here.]
+We're holding a [series of Public Newsroom events across the city](https://www.citybureau.org/notebook/2019/7/18/the-public-newsroom-returns-with-a-look-at-your-alderpersons-first-100-days) throughout August on how you can hold your alderman accountable, whether it's an election year or not. [See the full schedule here.]
 
 Can’t make it? Here are some easy-to-use tools for monitoring local government in Chicago any day of the week:
 
