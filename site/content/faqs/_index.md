@@ -30,7 +30,7 @@ A [criminal charge](https://en.wikipedia.org/wiki/Criminal_charge) is a formal a
 
 ### What can I do next?
 
-We're holding a [series of Public Newsroom events across the city](https://www.citybureau.org/notebook/2019/7/18/the-public-newsroom-returns-with-a-look-at-your-alderpersons-first-100-days) throughout August on how you can hold your alderman accountable, whether it's an election year or not. [See the full schedule here.]
+We're holding a series of Public Newsroom events across the city throughout August on how you can hold your alderman accountable, whether it's an election year or not. [See the full schedule here]((https://www.citybureau.org/notebook/2019/7/18/the-public-newsroom-returns-with-a-look-at-your-alderpersons-first-100-days)).
 
 Can’t make it? Here are some easy-to-use tools for monitoring local government in Chicago any day of the week:
 
