@@ -6,7 +6,6 @@ html {
   font-size: 16px;
 }
 
-//#b3ddf2
 html, body {
   padding: 0;
 }
@@ -62,8 +61,10 @@ img {
   image-orientation: from-image;
 }
 
-.input::placeholder, .textarea::placeholder {
-  color: rgb(54, 54, 54);
+.input::placeholder,
+.textarea::placeholder {
+  color: rgba(68,68,68,0.5);
+  opacity: 1;
 }
 
 /* Hide IE, Edge pseudo-elements */
@@ -100,6 +101,16 @@ img {
 #address {
   max-width: 600px;
   margin: auto;
+}
+
+#address + .delete {
+  position: absolute;
+  right: 8px;
+  top: 12px;
+}
+
+#address:placeholder-shown + .delete {
+  display: none;
 }
 
 .notification.is-info {

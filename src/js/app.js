@@ -60,4 +60,8 @@ document.addEventListener("DOMContentLoaded", () => {
   select.addEventListener("change", (e) => {
     updateWard(e.target.value);
   });
+
+  document.querySelector("#address + .delete").addEventListener("click", () => {
+    address.value = "";
+  });
 });
