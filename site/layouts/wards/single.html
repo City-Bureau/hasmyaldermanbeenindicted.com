@@ -19,13 +19,13 @@
       <div class="columns has-text-left">
         <div class="column content is-offset-3 is-6">
           {{ if (eq .Params.status "no") }}
-            <p>
-              Looks like you're one of the lucky ones!
-            </p>
+          <p>
+            Lucky you!
+          </p>
           {{ else }}
             {{ .Content }}
           {{ end }}
-          <br>
+          <br class="is-hidden-mobile">
           <div class="box has-text-centered">
             <p class="has-text-weight-bold is-marginless">
               Want to learn more?
@@ -36,7 +36,7 @@
           </div>
         </div>
       </div>
-      <br>
+      <br class="is-hidden-mobile">
       <div class="columns has-text-left">
         <div class="column content is-offset-3 is-6">
           <h3 class="subtitle is-4">
