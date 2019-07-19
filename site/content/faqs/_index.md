@@ -34,8 +34,9 @@ We're holding a series of Public Newsroom events across the city throughout Augu
 
 Can’t make it? Here are some easy-to-use tools for monitoring local government in Chicago any day of the week:
 
-* [Documenters.org](https://www.documenters.org/): our own civic engagement hub—find meeting dates, times, locations and official records for local government in Chicago and Detroit.
 * [Ballotpedia.org](https://ballotpedia.org/City_elections_in_Chicago,_Illinois_(2019)): the digital encyclopedia for American politics and elections.
-* [Illinois Sunshine](https://illinoissunshine.org/about/): a tool for browsing political campaign contributions in the state of Illinois.
-* [City of Chicago Data Portal](https://data.cityofchicago.org/): find city data and facts about your neighborhood; create maps and graphs about the city, and freely download the data for your own analysis.
-* [Chi.Vote](https://chi.vote/): Everything you need to vote in Chicago elections
+* [City of Chicago Data Portal](https://data.cityofchicago.org/): Find city data and facts about your neighborhood; create maps and graphs about the city, and freely download the data for your own analysis.
+* [Chi.Vote](https://chi.vote/): Everything you need to vote in Chicago elections.
+* [Councilmatic](https://chicago.councilmatic.org/): Tracks all things related to Chicago City Council from legislation introduced and passed to various committees.
+* [Documenters.org](https://www.documenters.org/): City Bureau’s own civic engagement hub. Find meeting dates, times, locations and official records for local government in Chicago and Detroit—get trained and paid to monitor them.
+* [Illinois Sunshine](https://illinoissunshine.org/): A tool for browsing political campaign contributions in the state of Illinois.
