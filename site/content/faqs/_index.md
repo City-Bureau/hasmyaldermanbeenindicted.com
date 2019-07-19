@@ -4,7 +4,7 @@ title: FAQs | Has my alderman been indicted?
 
 ### Who made this?
 
-<a href="https://citybureau.org/">City Bureau</a>...
+[City Bureau](https://citybureau.org/) is a nonprofit civic journalism lab based on the South Side of Chicago. We bring journalists and communities together in a collaborative spirit to produce media that is impactful, equitable and responsive to the public.
 
 ### What does an alderman even do?
 

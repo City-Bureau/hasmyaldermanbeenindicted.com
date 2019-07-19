@@ -122,7 +122,8 @@ img {
 #address + .delete {
   position: absolute;
   right: 8px;
-  top: 12px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 #address:placeholder-shown + .delete {
