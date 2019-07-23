@@ -6,7 +6,7 @@ enableRobotsTXT = true
 
 [params]
   subtitle = "Maybe. It's Chicago."
-  description = "Find out if your Chicago alderman has been indicted because at this point you've gotta ask."
+  description = "Find out if your Chicago alderman has been indicted, because at this point, you've gotta ask."
   author = "City Bureau"
   domain = "hasmyaldermanbeenindicted.com"
   twitter = "@city_bureau"
