@@ -16,7 +16,7 @@ In Chicago, an alderperson is one 50 elected officials in City Council, each rep
 
 Regardless of the size of his or her ward, aldermen and alderwomen get more than $1.3 million of city money each year—known as menu money—to spend on ward improvement projects like repaving roads, replacing traffic signals, planting new trees, bringing neighborhood art installations to the area and more.
 
-If you want to meet your representative, you can [reach out directly](https://www.chicago.gov/city/en/about/wards.html) or attend “ward nights”—an unofficial tradition where some aldermen host first-come-first serve office hours for their constituents. You can also attend meetings for each of City Council’s 16 [committees](https://www.propublica.org/article/chicago-city-council-legislative-committees-chairs-aldermen-political-favors-patronage) (each happening once a month) or the monthly full session of City Council, when all 50 aldermen meet at City Hall to vote on legislation, from the city’s annual budget to [plans for banning (and reinstating) pigeon racing](https://www.chicagotribune.com/politics/ct-met-chicago-legalize-pigeon-racing-20180628-story.html) in the city.
+If you want to meet your representative, you can [reach out directly](https://www.chicago.gov/city/en/about/wards.html) or attend “ward nights”—an unofficial tradition where some aldermen host first-come-first serve office hours for their constituents. You can also attend meetings for each of City Council’s 19 [committees](https://www.propublica.org/article/chicago-city-council-legislative-committees-chairs-aldermen-political-favors-patronage) (each happening once a month) or the monthly full session of City Council, when all 50 aldermen meet at City Hall to vote on legislation, from the city’s annual budget to [plans for banning (and reinstating) pigeon racing](https://www.chicagotribune.com/politics/ct-met-chicago-legalize-pigeon-racing-20180628-story.html) in the city.
 
 Aldermanic salaries are between $108,085 to $120,384 a year, according the city of Chicago’s [salary database](https://data.cityofchicago.org/Administration-Finance/Current-Employee-Names-Salaries-and-Position-Title/xzkq-xp2w).
 
@@ -36,7 +36,7 @@ A [criminal charge](https://en.wikipedia.org/wiki/Criminal_charge) is a formal a
 
 ### What can I do next?
 
-We're holding a series of Public Newsroom events across the city throughout August on how you can hold your alderman accountable, whether it's an election year or not. [See the full schedule here]((https://www.citybureau.org/notebook/2019/7/18/the-public-newsroom-returns-with-a-look-at-your-alderpersons-first-100-days)).
+We're holding a series of Public Newsroom events across the city throughout August on how you can hold your alderman accountable, whether it's an election year or not. [See the full schedule here](https://www.citybureau.org/notebook/2019/7/18/the-public-newsroom-returns-with-a-look-at-your-alderpersons-first-100-days).
 
 Can’t make it? Here are some easy-to-use tools for monitoring local government in Chicago any day of the week:
 

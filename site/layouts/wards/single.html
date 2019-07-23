@@ -20,16 +20,13 @@
         <div class="column content is-offset-3 is-6">
           {{ if (eq .Params.status "no") }}
           <p>
-            Lucky you! But it’s Chicago… check for updates early and often.
+            Lucky you! But, it’s Chicago… check for updates early and often.
           </p>
           {{ else }}
             {{ .Content }}
           {{ end }}
           <br class="is-hidden-mobile">
           <div class="box has-text-centered">
-            <p class="has-text-weight-bold is-marginless">
-              Want to learn more?
-            </p>
             <p>
               <a href="/">Search for another ward</a> or check out <a href="/faqs/">our FAQs</a>
             </p>
