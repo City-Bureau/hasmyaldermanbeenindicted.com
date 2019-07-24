@@ -3,31 +3,31 @@
   <div class="hero-body">
     <div class="container">
       <h1 class="title is-1">
-        Scoreboard
+        Wards
       </h1>
-      <div class="columns is-multiline has-text-left">
-          <div class="column is-2 header"></div>
+      <div class="columns is-multiline is-mobile has-text-left">
+          <div class="column is-2 header is-hidden-mobile"></div>
           <div class="column is-2 header">
               Ward
           </div>
-          <div class="column is-4 header">
+          <div class="column is-6-mobile is-4-tablet header">
               Alderman
           </div>
-          <div class="column is-2 header">
+          <div class="column is-4-mobile is-2-tablet header">
               Indicted?
           </div>
-          <div class="column is-2 header"></div>
+          <div class="column is-2 header is-hidden-mobile"></div>
           {{ range sort (where .Site.Pages "Params.ward" ">" 0) ".Params.ward" "asc" }}
-          <div class="column is-2"></div>
+          <div class="column is-2 is-hidden-mobile"></div>
           <div class="column is-2 ward-row {{ .Params.status }}">
               <a href="{{ .Permalink }}">
                 {{ humanize .Params.ward }}
               </a>
           </div>
-          <div class="column is-4 ward-row {{ .Params.status }}">
+          <div class="column is-6-mobile is-4-tablet ward-row {{ .Params.status }}">
               {{ .Params.name }}
           </div>
-          <div class="column is-2 ward-row {{ .Params.status }}">
+          <div class="column is-4-mobile is-2-tablet ward-row {{ .Params.status }}">
             {{ if (eq .Params.status "yes") }}
                 Yes
             {{ else if (eq .Params.status "nobut") }}
@@ -36,7 +36,7 @@
                 No
             {{ end }}
           </div>
-          <div class="column is-2"></div>
+          <div class="column is-2 is-hidden-mobile"></div>
           {{ end }}
       </div>
     </div>

@@ -1,3 +1,3 @@
 ---
-title: "Ward Scorecard"
+title: Ward List
 ---
