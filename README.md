@@ -7,8 +7,8 @@ Source code for [hasmyaldermanbeenindicted.com](https://hasmyaldermanbeenindicte
 Requires `node`, `wget` and GNU Make.
 
 ```bash
-yarn
-yarn start
+npm install
+npm start
 ```
 
 ## Deploy
